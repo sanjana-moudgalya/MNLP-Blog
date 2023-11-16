@@ -57,19 +57,19 @@ Now that we have an understanding of the language models and the translation tas
 
 In-depth analysis of the performance of various LLMs reveal key factors influencing their translation performance. The study focuses on resource efficiency, prompt template design, and the importance of cross-lingual examples. Here are the main findings:
 
-### 1. Pre-training Corpus Size: 
+#### 1. Pre-training Corpus Size: 
 LLMs can perform moderately well in a resource-efficient manner even on low-resource languages, like Catalan and Swahili. Even if the translation capabilities aren’t as great as high-resource languages, LLMs demonstrate a great learning potential through In-Context Learning (ICL), highlighting the model's adaptability.
 
-### 2. In-context Template:
+#### 2. In-context Template:
 The choice of prompt template significantly impacts translation performance, with variations of up to 16 BLEU points. Surprisingly, even seemingly unreasonable templates can effectively guide LLM in generating quality translations. “<X>=<Y>” results in the highest average BLEU score, whereas “[SRC]: <X> \n [TGT]: <Y>” achieves the lowest score. This shows us how dynamic seemingly similar templates can be with respect to performance.
 
-### 3. In-context Exemplar:
+#### 3. In-context Exemplar:
 Cross-lingual examples in the prompts prove beneficial for certain translation directions, especially for those involving low-resource languages (such as Quechua-English), showcasing potential versatility. The selection of semantically-related examples does not necessarily enhance performance compared to randomly-picked examples. LLM learns core translation features through examples, emphasizing the importance of context and diversity. However, it is also important to notice the correlation of performance with the number of examples provided. BLEU score improves up to 8 examples, plateaus till 32, and then gradually declines.
 
-### 4. Translation Granularity: 
+#### 4. Translation Granularity: 
 Word-level and document-level examples negatively affect LLMs’ performance, emphasizing the need for appropriate granularity in example selection. Diverse and contextually relevant examples contribute to better translation outcomes. It has been shown that duplicates in examples can adversely affect performance,
 
-### 5. Prompt Structure Impact:
+#### 5. Prompt Structure Impact:
 The placement of examples within the prompt has a varying impact on LLM's behavior.
 Reversing examples at the end of the prompt consistently leads to poorer results, highlighting the significance of prompt structure.
 
