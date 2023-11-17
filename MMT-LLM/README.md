@@ -38,7 +38,7 @@ The research paper does a great job of scouting out and analyzing the strengths 
 - **Cross-Lingual Exemplars**: Examples from different languages can provide better task guidance for low-resource translation than languages in the same resource group.
 - **Resource-Efficient Translation Acquisition**: LLMs can acquire translation ability in a resource-efficient way, generating moderate translation even for zero-resource languages.
 
-While this research paper highlights the impressive capabilities of LLMs, it's essential to acknowledge certain challenges and issues associated with this approach. One main challenge is that LLMs exhibit unbalanced translation capabilities across languages. They tend to perform better in translating into English than into non-English languages. Furthermore, GPT-4 faces greater challenges in French-centric and Chinese-centric translations, emphasizing the need for more balanced capabilities. 
+While this research highlights the impressive capabilities of LLMs, it's essential to acknowledge certain challenges and issues associated with this approach. One main challenge is that LLMs exhibit unbalanced translation capabilities across languages. They tend to perform better in translating into English than into non-English languages. Furthermore, GPT-4 faces greater challenges in French-centric and Chinese-centric translations, emphasizing the need for more balanced capabilities. 
 
 Another main challenge is the challenges caused by the underlying representations of language models. They can unknowingly propagate biases present in their training data to downstream tasks. If the training data contains biases, the language model may exhibit biased behavior, potentially reinforcing stereotypes or prejudices. Despite their linguistic power, language models may lack true comprehension and understanding. They generate responses based on patterns learned during training but may not truly grasp the underlying meaning. This can lead to responses that sound plausible but are factually incorrect or nonsensical.
 
@@ -95,8 +95,7 @@ Swahili-English > 39.080203011245224 <br>
 We can see that the BLEU score is lesser for Assamese and Swahili (low-resource languages when compared to German). Another important point to note is that generating Assamese text results in a lower score compared to generating English text, mainly because learning the vocabulary (to generate, instead of interpret) of a low-resource language might be harder.
 
 ## References
-[1] Zhu, Wenhao, et al. "Multilingual machine translation with large language models: Empirical results and analysis." arXiv preprint arXiv:2304.04675 (2023).
-[2] https://thegradient.pub/in-context-learning-in-context/
-[3] https://blog.ml6.eu/navigating-ethical-considerations-developing-and-deploying-large-language-models-llms-d44f3fcde626
-[4] https://www.fiverr.com/ilovhus/translate-you-from-a-language-you-choose-to-any-other-language
-
+[1] Zhu, Wenhao, et al. "Multilingual machine translation with large language models: Empirical results and analysis." arXiv preprint arXiv:2304.04675 (2023) <br>
+[2] https://thegradient.pub/in-context-learning-in-context/  <br>
+[3] https://blog.ml6.eu/navigating-ethical-considerations-developing-and-deploying-large-language-models-llms-d44f3fcde626  <br>
+[4] https://www.fiverr.com/ilovhus/translate-you-from-a-language-you-choose-to-any-other-language  <br>
