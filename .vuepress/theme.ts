@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "sanjana-moudgalya/mnlp_blog",
+  repo: "sanjana-moudgalya/blog",
 
   // docsDir: "demo/src",
 
@@ -31,7 +31,7 @@ export default hopeTheme({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
-    description: "AI Researcher",
+    description: "MCDS Students @ CMU",
     intro: "/",
     medias: {
       GitHub: "https://www.github.com/lileicc",
