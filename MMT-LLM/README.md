@@ -1,3 +1,16 @@
+---
+title: Multilingual Machine Translation with Large Language Models
+author: Anusha Rao, Sanjana Moudgalya
+date: 2023-11-16
+category:
+ - MT
+tag:
+ - Multilingual MT
+ - Large Language Models
+ - Evaluation with BLEU
+star: true
+---
+
 # Evaluation of Machine Translations using Large Language Models
 ### Anusha Rao, Sanjana Moudgalya
 
