@@ -6,7 +6,7 @@ export default defineUserConfig({
   lang: "en-US",
   title: "Evaluation of Machine Translations with Large Language Models",
   description: "A Blog for Machine Learning, Natural Language Processing, and Data Mining",
-  base: "/mnlp_blog/",
+  base: "/blog/",
   theme,
   plugins: [
     searchPlugin({
