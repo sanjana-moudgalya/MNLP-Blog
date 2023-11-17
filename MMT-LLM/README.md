@@ -66,7 +66,9 @@ An in-depth analysis of the performance of various LLMs reveals key factors infl
 LLMs can perform moderately well in a resource-efficient manner even on low-resource languages, like Catalan and Swahili. Even if the translation capabilities aren’t as great as high-resource languages, LLMs demonstrate a great learning potential through In-Context Learning (ICL), highlighting the model's adaptability.
 
 #### 2. In-context Template:
-The choice of prompt template significantly impacts translation performance, with variations of up to 16 BLEU points. Surprisingly, even seemingly unreasonable templates can effectively guide LLM in generating quality translations. “X = Y” results in the highest average BLEU score, whereas “[SRC]: X \n [TGT]: Y” achieves the lowest score, where X is the source sentence and Y is the target sentence. This shows us how dynamic seemingly similar templates can be with respect to performance.
+The choice of prompt template significantly impacts translation performance, with variations of up to 16 BLEU points. Surprisingly, even seemingly unreasonable templates can effectively guide LLM in generating quality translations. "X = Y" results in the highest average BLEU score, whereas "[SRC]: X \n [TGT]: Y" achieves the lowest score, where X is the source sentence and Y is the target sentence. This shows us how dynamic seemingly similar templates can be with respect to performance. <br>
+Example of the prompt template that gave us the best results during reproduction: <br>
+"X = Y" format: „Wir haben jetzt 4 Monate alte Mäuse, die Diabetes hatten und jetzt keinen mehr haben“, fügte er hinzu. = "We now have 4-month-old mice that are non-diabetic that used to be diabetic," he added.
 
 #### 3. Cross-lingual Exemplar:
 ![alt text](https://github.com/sanjana-moudgalya/mnlp_blog/blob/main/MMT-LLM/Cross-lingual%20Examplars.png?raw=true)
