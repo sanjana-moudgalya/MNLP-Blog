@@ -85,4 +85,7 @@ In the broader context of multilingual machine translation, this paper evaluates
 
 ## References
 [1] Zhu, Wenhao, et al. "Multilingual machine translation with large language models: Empirical results and analysis." arXiv preprint arXiv:2304.04675 (2023).
+[2] https://thegradient.pub/in-context-learning-in-context/
+[3] https://blog.ml6.eu/navigating-ethical-considerations-developing-and-deploying-large-language-models-llms-d44f3fcde626
+[4] https://www.fiverr.com/ilovhus/translate-you-from-a-language-you-choose-to-any-other-language
 
