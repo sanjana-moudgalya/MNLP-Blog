@@ -33,12 +33,7 @@ As per the results reported in the base paper, they perform a series of assessme
 
 ## Limitations with the Existing State of Machine Translation using LLMs
 
-The research paper does a great job of scouting out and analyzing the strengths of LLMs in language translation tasks. A few include:
-- **Ignoring Instruction Semantics**: LLMs can surprisingly ignore instruction semantics when given in-context examples.
-- **Cross-Lingual Exemplars**: Examples from different languages can provide better task guidance for low-resource translation than languages in the same resource group.
-- **Resource-Efficient Translation Acquisition**: LLMs can acquire translation ability in a resource-efficient way, generating moderate translation even for zero-resource languages.
-
-While this research highlights the impressive capabilities of LLMs, it's essential to acknowledge certain challenges and issues associated with this approach. One main challenge is that LLMs exhibit unbalanced translation capabilities across languages. They tend to perform better in translating into English than into non-English languages. Furthermore, GPT-4 faces greater challenges in French-centric and Chinese-centric translations, emphasizing the need for more balanced capabilities. 
+While the study highlights the impressive capabilities of LLMs, it's essential to acknowledge certain challenges and issues associated with machine translation systems, particularly the ones that use LLMs. One main challenge is that LLMs exhibit unbalanced translation capabilities across languages. They tend to perform better in translating into English than into non-English languages. Furthermore, GPT-4 faces greater challenges in French-centric and Chinese-centric translations, emphasizing the need for more balanced capabilities. 
 
 Another main challenge is the challenges caused by the underlying representations of language models. They can unknowingly propagate biases present in their training data to downstream tasks. If the training data contains biases, the language model may exhibit biased behavior, potentially reinforcing stereotypes or prejudices. Despite their linguistic power, language models may lack true comprehension and understanding. They generate responses based on patterns learned during training but may not truly grasp the underlying meaning. This can lead to responses that sound plausible but are factually incorrect or nonsensical.
 
