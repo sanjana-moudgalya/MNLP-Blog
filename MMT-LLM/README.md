@@ -31,7 +31,7 @@ Now that we know what these models are capable of, let's evaluate their true abi
 
 As per the results reported in the base paper, they perform a series of assessments on 8 LLMs that include English-centric ones like OPT, LLaMA2, LLaMA2-Chat, Falcon, and multilingual LLMs such as XGLM, BLOOMZ, ChatGPT, and GPT-4. It considers a broad spectrum of 102 languages across 606 translation directions. Their findings reveal improvements in the multilingual translation capabilities of LLMs, with GPT-4 achieving considerably high performance. Throughout this article, we focus on the working patterns of LLMs uncovered by the base paper and present our conclusions on the strengths and weaknesses of LLMs on MMT tasks. 
 
-## Issues with the Existing State of Machine Translation using LLMs
+## Limitations with the Existing State of Machine Translation using LLMs
 
 The research paper does a great job of scouting out and analyzing the strengths of LLMs in language translation tasks. A few include:
 - **Ignoring Instruction Semantics**: LLMs can surprisingly ignore instruction semantics when given in-context examples.
@@ -81,7 +81,13 @@ Reversing examples at the end of the prompt consistently leads to poorer results
 
 ## Summary
 
-In the broader context of multilingual machine translation, this paper evaluates popular LLMs, such as ChatGPT and GPT-4, on 102 languages and 606 directions. While acknowledging continuous improvements, challenges remain for low-resource languages. LLMs have a lot of strengths, including the ability to ignore instruction semantics during in-context learning and the effectiveness of cross-lingual examples for low-resource translations. The analysis suggests a promising future for LLMs in resource-efficient multilingual machine translation.
+In the broader context of multilingual machine translation, this paper evaluates popular LLMs, such as ChatGPT and GPT-4, on 102 languages and 606 directions. While acknowledging continuous improvements, challenges remain for low-resource languages. LLMs have a lot of strengths, including the ability to ignore instruction semantics during in-context learning and the effectiveness of cross-lingual examples for low-resource translations. The analysis suggests a promising future for LLMs in resource-efficient multilingual machine translation. 
+The authors of this paper have done a good job at maintaining the codebase. Their GitHub repository is reproducible with a fairly small amount of changes. To provide evidence to the limitations and analysis section in this blog, we have a few BLEU scores after reproducing this paper using the NLLB (600M parameter) model - 
+German-English > 43.78426080060355
+Assamese-English > 27.894121883466795
+English-Assamese > 23.10996837152803
+Swahili-English > 39.080203011245224
+We can see that the BLEU score is lesser for Assamese and Swahili (low-resource languages when compared to German). Another important point to note is that generating Assamese text results in a lower score compared to generating English text, mainly because learning the vocabulary (to generate, instead of interpret) of a low-resource language might be harder.
 
 ## References
 [1] Zhu, Wenhao, et al. "Multilingual machine translation with large language models: Empirical results and analysis." arXiv preprint arXiv:2304.04675 (2023).
