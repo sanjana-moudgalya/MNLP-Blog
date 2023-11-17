@@ -11,8 +11,7 @@ tag:
 star: true
 ---
 
-# Evaluation of Machine Translations using Large Language Models
-### Authors: Anusha Rao (anushasa), Sanjana Moudgalya (smoudgal)
+# Multilingual Machine Translation with Large Language Models
 
 To all those tech enthusiasts out there, here’s yet another advancement of Large Language Models (LLM) that’s worth a read. This article explores how powerful these models are in language translation tasks by presenting a summary of evaluations on 8 LLMs including but not limited to Chat-GPT, GPT-4, and Google Translate.
 
