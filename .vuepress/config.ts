@@ -4,7 +4,7 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   lang: "en-US",
-  title: "MLNLP Blog",
+  title: "Evaluation of Machine Translations with Large Language Models",
   description: "A Blog for Machine Learning, Natural Language Processing, and Data Mining",
   base: "/blog/",
   theme,
