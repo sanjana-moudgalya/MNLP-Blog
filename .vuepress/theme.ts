@@ -3,18 +3,18 @@ import navbar from "./navbar.js";
 // import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://lileicc.github.io",
+  hostname: "https://sanjana-moudgalya.github.io",
 
   author: {
-    name: "Lei Li",
-    url: "https://www.cs.ucsb.edu/~leili",
+    name: "Anusha Rao, Sanjana Moudgalya",
+    //url: "https://www.cs.ucsb.edu/~leili",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "lileicc/blog",
+  repo: "sanjana-moudgalya/mnlp_blog",
 
   // docsDir: "demo/src",
 
